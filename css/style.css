@@ -1,0 +1,126 @@
+/*верстаем с rem - относительная единица измеренерия, 
+котрая зависит от базвого размера шрифта(рамзер котрй имеет тэг <html> , 
+у большинства барузеров он равен 16px т.е. 1rem = 16px)*/
+html, body{
+    font-size: 62.5%; /*16*0.625 = 10, т.е.  размер базового шрифта = 10 px*/
+}
+
+img{
+    width: 100%;
+    height: auto;
+    object-fit: contain; /*чтобы не растягивалось изображение, сохраняло пропорции*/
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{ /* ширина конейтнера 1200px*/
+    width: 120rem; /* 120rem = 1200px/10px */
+    margin: 0 auto;
+}
+
+.header{
+    background:  linear-gradient(269.91deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.16%);
+    padding: 2.3rem 0; /* т.е. 23px/10*/
+    color: #FFFFFF;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header__telephone, .header__maps, .header__inst {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.header__telephone-img, .header__maps-img,  .header__inst-img{
+    margin-right: 1.5rem;
+}
+
+.header__telephone-img {
+    width: 2rem; /*20px/10*/
+    height: 2rem;
+
+}
+
+
+.header__telephone-text {
+}
+
+.header__maps {
+}
+
+.header__maps-img {
+    width: 1.5rem; 
+    height: 2.5rem;
+}
+
+.header__inst {
+}
+
+.header__inst-img {
+    width: 3rem; 
+    height: 2.8rem;
+}
+
+
+.footer {
+    position: relative; /*относиельно этого позиуиониуе большой и маленткий шетсиугольники*/
+
+}
+
+
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12rem; /*120px*/
+    padding-right: 12rem;
+    padding-top: 17.2rem;
+    padding-bottom: 8.4rem;
+}
+
+.footer__inst {
+    width: 3.3rem;
+    height: 3.3rem;
+}
+
+.footer__header {
+    margin-bottom: 1rem; /*10px*/
+}
+
+.footer__telephone {
+}
+
+.footer__address {
+}
+
+.footer__decor-1{
+    position: absolute;
+    left: 20%;
+    top: 47%;
+    width: 11rem;
+    height: 12.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.footer__decor-2{
+    position: absolute;
+    left: 77%;
+    top: 47%;
+    width: 23.3rem;
+    height: 26.4rem;
+    transform: translate(-50%, -50%);
+}
+
+
+/*шестиугольник в подвале луше делать фоном или псевдоэлементами, но мы сделаем через абсолютное позиционирование*/
