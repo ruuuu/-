@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle-min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Сервис ковриков</title>
 </head>
@@ -164,15 +165,93 @@
         </section>
 
         <section class="review">
-            <div class="container">
-                <div class="review__slider">
-                    <div class="review__slide">
-                        <div class="review__slide-text">
-                            <div class="review__slide-name"></div>
+
+            <div class="review__slider swiper">
+                <div class="swiper-wrapper review__wrapper">
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">Покупала у ребят коврики для Хундай солярис в подарок
+                            молодому
+                            человеку. Все очень понравилось. Буду советовать только вас.
+                        </div>
+                        <div class="review__slide-name">Вера К</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="img/review1.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">Спасибо, все приехало, поставил. Результатом доволен, в
+                            машине
+                            супер! Заказывал на Ниссан.
+                        </div>
+                        <div class="review__slide-name">Николай П</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="img/review2.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">Коврики супер!!! Качество на высшем уровне!!!
+                            Удачи и побольше заказов вам!!! Большое спасибо!
+                        </div>
+                        <div class="review__slide-name">Давлетова Р</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="img/review3.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">Так все понравилось!
+                        </div>
+                        <div class="review__slide-name">Петров В</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="img/review1.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">Вы большие молодцы прям!
+                        </div>
+                        <div class="review__slide-name">Игнатьев В</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="img/review2.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">Пишу хороший отзыв
+                        </div>
+                        <div class="review__slide-name">Кушнирк Н</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="img/review3.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review__slide swiper-slide">
+                        <div class="review__slide-text">Было приятно работаь
+                        </div>
+                        <div class="review__slide-name">Максимов Н</div>
+                        <div class="review__slide-img">
+                            <div class="review__slide-photo">
+                                <img src="img/review1.jpeg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
     </main>
 
@@ -208,11 +287,44 @@
                     <img src="img/right-figure-footer.svg" alt="">
                 </div>
             </div>
-
-
         </div>
     </footer>
 
+    <form action="" class="modal">
+        <div class="modal__inner">
+            <h2 class="modal__inner-header">Форма заявки</h2>
+            <div class="modal__inner-elements">
+                <div class="modal__item">
+                    <div class="modal__wrap-input">
+                        <div class="modal__input-short">
+                            <input class="modal__input" type="text">
+                        </div>
+                    </div>
+                    <div class=" modal__input-short">
+                        <input class="modal__input" type="email">
+                    </div>
+                </div>
+
+                <div class="modal__item modal__item-long">
+                    <textarea class="modal-message" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="modal__policy">
+                    <input type="checkbox" id="modal__check">
+                    <label for="modal__check">
+                        <span>Я соглашаюсь с</span>
+                        <a href="#">Политикой беопасностий</a>
+                    </label>
+                </div>
+
+                <button class="main-display__button modal__button" type="button">Отправить</button>
+            </div>
+        </div>
+        </div>
+    </form>
+
+    <script src="js/swiper-bundle-min.js"></script>
+    <script src="js/main.js"> </script>
 </body>
 
 </html>
